@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'CommonFormattersKit', :exclusive => true do
+  pod "CommonFormattersKit", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "CommonFormattersKit", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end

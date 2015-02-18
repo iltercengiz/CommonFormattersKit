@@ -1,12 +1,22 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'CommonFormattersKit', :exclusive => true do
-  pod "CommonFormattersKit", :path => "../"
+    
+    pod "CommonFormattersKit", :path => "../"
+    
+    # Utils
+    pod 'libPhoneNumber-iOS', '~> 0.8.2'
+    
+    # UI
+    pod 'RMDateSelectionViewController', '~> 1.4.2'
+    
 end
 
 target 'Tests', :exclusive => true do
-  pod "CommonFormattersKit", :path => "../"
-
-  pod 'Specta'
-  pod 'Expecta'
+    
+    pod "CommonFormattersKit", :path => "../"
+    
+    pod 'Specta'
+    pod 'Expecta'
+    
 end

@@ -8,6 +8,7 @@ target 'CommonFormattersKit', :exclusive => true do
     pod 'libPhoneNumber-iOS', '~> 0.8.2'
     
     # UI
+    pod 'RMPickerViewController', '~> 1.3.3'
     pod 'RMDateSelectionViewController', '~> 1.4.2'
     
 end

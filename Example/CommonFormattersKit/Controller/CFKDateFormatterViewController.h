@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CFKDateFormatterViewController : UIViewController
+@interface CFKDateFormatterViewController : UITableViewController
 
 @end

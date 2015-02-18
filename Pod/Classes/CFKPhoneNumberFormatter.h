@@ -36,11 +36,11 @@
 + (BOOL)isValidPhoneNumber:(NSString *)phoneNumberString;
 
 /**
- Formats the given string as +1 500-123 45 67 and returns it.
+ Formats the given string as +1 500-123-4567 and returns it.
  
  @param number Phone number string to be formatted
  
- @return String formatted as +1 500-123 45 67
+ @return String formatted as +1 500-123-4567
  */
 + (NSString *)formattedNumberInInternationalFormatFromNumber:(NSString *)number;
 

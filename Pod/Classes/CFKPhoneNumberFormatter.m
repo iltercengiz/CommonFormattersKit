@@ -92,12 +92,12 @@
     NBPhoneNumber *phoneNumber = [self.util parse:number defaultRegion:self.region error:&error];
     
     if (error) {
-        NSLog(@"Error: %@", error.description);
+        // NSLog(@"Error: %@", error.description);
     } else {
         if ([self.util isValidNumber:phoneNumber]) {
             return [self.util format:phoneNumber numberFormat:format error:&error];
         } else {
-            NSLog(@"Phone number: %@", phoneNumber.description);
+            // NSLog(@"Phone number: %@", phoneNumber.description);
         }
     }
     

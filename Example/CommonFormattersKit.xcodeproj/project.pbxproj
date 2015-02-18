@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		36E3F5E31A9486A900EC8B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E3F5E21A9486A900EC8B40 /* Main.storyboard */; };
 		36E3F5E51A9486B300EC8B40 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E3F5E41A9486B300EC8B40 /* Launch Screen.xib */; };
+		36E3F5E91A948B8C00EC8B40 /* CFKDateFormatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E3F5E81A948B8C00EC8B40 /* CFKDateFormatterViewController.m */; };
+		36E3F5EC1A948B9C00EC8B40 /* CFKPhoneNumberFormatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E3F5EB1A948B9C00EC8B40 /* CFKPhoneNumberFormatterViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,6 +42,10 @@
 		1121C4642A72F29188738746 /* Pods-CommonFormattersKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonFormattersKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonFormattersKit/Pods-CommonFormattersKit.release.xcconfig"; sourceTree = "<group>"; };
 		36E3F5E21A9486A900EC8B40 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		36E3F5E41A9486B300EC8B40 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		36E3F5E71A948B8C00EC8B40 /* CFKDateFormatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKDateFormatterViewController.h; sourceTree = "<group>"; };
+		36E3F5E81A948B8C00EC8B40 /* CFKDateFormatterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKDateFormatterViewController.m; sourceTree = "<group>"; };
+		36E3F5EA1A948B9C00EC8B40 /* CFKPhoneNumberFormatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFKPhoneNumberFormatterViewController.h; sourceTree = "<group>"; };
+		36E3F5EB1A948B9C00EC8B40 /* CFKPhoneNumberFormatterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFKPhoneNumberFormatterViewController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CommonFormattersKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonFormattersKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36E3F5E61A948B7000EC8B40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36E3F5E71A948B8C00EC8B40 /* CFKDateFormatterViewController.h */,
+				36E3F5E81A948B8C00EC8B40 /* CFKDateFormatterViewController.m */,
+				36E3F5EA1A948B9C00EC8B40 /* CFKPhoneNumberFormatterViewController.h */,
+				36E3F5EB1A948B9C00EC8B40 /* CFKPhoneNumberFormatterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +148,7 @@
 			children = (
 				6003F59C195388D20070C39A /* CFKAppDelegate.h */,
 				6003F59D195388D20070C39A /* CFKAppDelegate.m */,
+				36E3F5E61A948B7000EC8B40 /* Controller */,
 				36E3F5E21A9486A900EC8B40 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				36E3F5E41A9486B300EC8B40 /* Launch Screen.xib */,
@@ -356,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E3F5EC1A948B9C00EC8B40 /* CFKPhoneNumberFormatterViewController.m in Sources */,
+				36E3F5E91A948B8C00EC8B40 /* CFKDateFormatterViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CFKAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

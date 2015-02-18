@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CFKPhoneNumberFormatterViewController : UIViewController
+@interface CFKPhoneNumberFormatterViewController : UITableViewController
 
 @end

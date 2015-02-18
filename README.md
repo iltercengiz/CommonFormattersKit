@@ -1,6 +1,6 @@
 # CommonFormattersKit
 
-[![CI Status](http://img.shields.io/travis/Ilter Cengiz/CommonFormattersKit.svg?style=flat)](https://travis-ci.org/Ilter Cengiz/CommonFormattersKit)
+[![CI Status](http://img.shields.io/travis/iltercengiz/CommonFormattersKit.svg?style=flat)](https://travis-ci.org/iltercengiz/CommonFormattersKit)
 [![Version](https://img.shields.io/cocoapods/v/CommonFormattersKit.svg?style=flat)](http://cocoadocs.org/docsets/CommonFormattersKit)
 [![License](https://img.shields.io/cocoapods/l/CommonFormattersKit.svg?style=flat)](http://cocoadocs.org/docsets/CommonFormattersKit)
 [![Platform](https://img.shields.io/cocoapods/p/CommonFormattersKit.svg?style=flat)](http://cocoadocs.org/docsets/CommonFormattersKit)

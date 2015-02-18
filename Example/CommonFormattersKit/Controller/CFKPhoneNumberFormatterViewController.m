@@ -56,7 +56,7 @@
     
     if ([CFKPhoneNumberFormatter isValidPhoneNumber:textField.text]) {
         self.InternationalPhoneNumberLabel.text = [CFKPhoneNumberFormatter formattedNumberInInternationalFormatFromNumber:textField.text];
-        self.E164PhoneNumberLabel.text = [CFKPhoneNumberFormatter formattedNumberInInternationalFormatFromNumber:textField.text];
+        self.E164PhoneNumberLabel.text = [CFKPhoneNumberFormatter formattedNumberInE164FormatFromNumber:textField.text];
     } else {
         self.InternationalPhoneNumberLabel.text = @"NaN";
         self.E164PhoneNumberLabel.text = @"NaN";
@@ -66,9 +66,16 @@
     
 }
 
+#pragma mark - Table view delegate
+
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
     UITableViewHeaderFooterView *headerView = (UITableViewHeaderFooterView *)view;
     headerView.textLabel.textColor = [UIColor whiteColor];
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section {
+    UITableViewHeaderFooterView *footerView = (UITableViewHeaderFooterView *)view;
+    footerView.textLabel.textColor = [UIColor whiteColor];
 }
 
 @end

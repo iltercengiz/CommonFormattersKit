@@ -148,7 +148,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.35294117647058826" green="0.48627450980392156" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="8Tq-kh-L7G">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="91"/>
+                            <rect key="frame" x="0.0" y="64" width="600" height="88"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHi-6p-92S" userLabel="Description Label">
@@ -157,11 +157,11 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="18a-qJ-Uu2">
-                                    <rect key="frame" x="16" y="35" width="568" height="36"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="18a-qJ-Uu2">
+                                    <rect key="frame" x="0.0" y="35" width="600" height="44"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="36" id="ihN-TV-4gM"/>
+                                        <constraint firstAttribute="height" constant="44" id="ihN-TV-4gM"/>
                                     </constraints>
                                     <color key="textColor" red="0.27450980390000002" green="0.37254901959999998" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -173,15 +173,15 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="18a-qJ-Uu2" secondAttribute="trailing" constant="16" id="K5Z-dy-B7Q"/>
+                                <constraint firstAttribute="trailing" secondItem="18a-qJ-Uu2" secondAttribute="trailing" id="K5Z-dy-B7Q"/>
                                 <constraint firstItem="FHi-6p-92S" firstAttribute="top" secondItem="8Tq-kh-L7G" secondAttribute="top" constant="8" id="SNZ-mG-P2O"/>
                                 <constraint firstAttribute="centerX" secondItem="FHi-6p-92S" secondAttribute="centerX" id="ThX-pq-PrZ"/>
                                 <constraint firstItem="18a-qJ-Uu2" firstAttribute="top" secondItem="FHi-6p-92S" secondAttribute="bottom" constant="8" id="bkI-90-fDy"/>
-                                <constraint firstItem="18a-qJ-Uu2" firstAttribute="leading" secondItem="8Tq-kh-L7G" secondAttribute="leading" constant="16" id="tlN-Vq-TXp"/>
+                                <constraint firstItem="18a-qJ-Uu2" firstAttribute="leading" secondItem="8Tq-kh-L7G" secondAttribute="leading" id="tlN-Vq-TXp"/>
                             </constraints>
                         </view>
                         <sections>
-                            <tableViewSection headerTitle="International" id="THw-te-lEl">
+                            <tableViewSection headerTitle="International" footerTitle="Can be used to show to users" id="THw-te-lEl">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="qma-Kw-HCU" style="IBUITableViewCellStyleDefault" id="A37-Qt-RQf">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -199,7 +199,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="E164" id="iyj-eQ-3Xe">
+                            <tableViewSection headerTitle="E164" footerTitle="Can be used in background tasks, such as requesting verification code from server" id="iyj-eQ-3Xe">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="1HG-kg-FRz" style="IBUITableViewCellStyleDefault" id="ZDG-0j-JvP">
                                         <autoresizingMask key="autoresizingMask"/>

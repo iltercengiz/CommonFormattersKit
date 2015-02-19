@@ -43,6 +43,18 @@
     return [[self sharedInstance].dateFormatter stringFromDate:date];
 }
 
++ (void)setLocale:(NSLocale *)locale {
+    if (locale) {
+        [self sharedInstance].dateFormatter.locale = locale;
+    }
+}
+
++ (void)setTimeZone:(NSTimeZone *)timeZone {
+    if (timeZone) {
+        [self sharedInstance].dateFormatter.timeZone = timeZone;
+    }
+}
+
 #pragma mark - Private methods
 
 - (void)setFormat:(CFKDateFormat)format {

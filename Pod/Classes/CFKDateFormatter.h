@@ -82,4 +82,20 @@ typedef NS_ENUM(NSInteger, CFKDateFormat) {
  */
 + (NSString *)stringFromDate:(NSDate *)date withFormat:(CFKDateFormat)format;
 
+/**
+ Sets the locale for date formatter.
+ By default it uses the systems locale set in device settings.
+ 
+ @param Locale for the date formatter
+ */
++ (void)setLocale:(NSLocale *)locale;
+
+/**
+ Sets the time zone for date formatter.
+ By default it uses the time zone from the date & time settings of the device.
+ 
+ @param Time zone for the date formatter
+ */
++ (void)setTimeZone:(NSTimeZone *)timeZone;
+
 @end

@@ -43,13 +43,13 @@ typedef NS_ENUM(NSInteger, CFKDateFormat) {
     // 18.02
     CFKDateFormatddMM,
     
-    // 18 Wed
+    // 18W
     CFKDateFormatdEEEEE,
     
     // Wednesday
     CFKDateFormatEEEE,
     
-    // W 18
+    // Wed 18
     CFKDateFormatEdd,
     
     // Wednesday 18 Feb

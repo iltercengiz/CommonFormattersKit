@@ -63,7 +63,7 @@ typedef NS_ENUM(NSInteger, CFKDateFormat) {
 @interface CFKDateFormatter : NSObject
 
 /**
- Returns an `NSDate` object parsed from the given string and format.
+ Returns an `NSDate` object parsed from the given format or string format.
  
  @param string The string to be parsed
  @param format Date format to be used in parsing the string
@@ -72,8 +72,10 @@ typedef NS_ENUM(NSInteger, CFKDateFormat) {
  */
 + (NSDate *)dateFromString:(NSString *)string withFormat:(CFKDateFormat)format;
 
++ (NSDate *)dateFromString:(NSString *)string withCustomFormat:(NSString *)format;
+
 /**
- Returns an `NSString` object parsed from the given date and format.
+ Returns an `NSString` object parsed from the given date and format or string format.
  
  @param date The date to be parsed
  @param format Date format to be used in parsing the date
@@ -81,6 +83,8 @@ typedef NS_ENUM(NSInteger, CFKDateFormat) {
  @return String object parsed from the date in the given format
  */
 + (NSString *)stringFromDate:(NSDate *)date withFormat:(CFKDateFormat)format;
+
++ (NSString *)stringFromDate:(NSDate *)date withCustomFormat:(NSString *)format;
 
 /**
  Sets the locale for date formatter.

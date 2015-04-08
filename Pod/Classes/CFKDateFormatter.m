@@ -38,8 +38,18 @@
     return [[self sharedInstance].dateFormatter dateFromString:string];
 }
 
++ (NSDate *)dateFromString:(NSString *)string withCustomFormat:(NSString *)format {
+    [self sharedInstance].dateFormatter.dateFormat = format;
+    return [[self sharedInstance].dateFormatter dateFromString:string];
+}
+
 + (NSString *)stringFromDate:(NSDate *)date withFormat:(CFKDateFormat)format {
     [[self sharedInstance] setFormat:format];
+    return [[self sharedInstance].dateFormatter stringFromDate:date];
+}
+
++ (NSString *)stringFromDate:(NSDate *)date withCustomFormat:(NSString *)format {
+    [self sharedInstance].dateFormatter.dateFormat = format;
     return [[self sharedInstance].dateFormatter stringFromDate:date];
 }
 
@@ -58,9 +68,7 @@
 #pragma mark - Private methods
 
 - (void)setFormat:(CFKDateFormat)format {
-    
     switch (format) {
-            
         case CFKDateFormatyyyy: self.dateFormatter.dateFormat = @"yyyy"; break;
         case CFKDateFormatyyyyMMdd: self.dateFormatter.dateFormat = @"yyyy-MM-dd"; break;
         case CFKDateFormatyyyyMMddHHmm: self.dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm"; break;
@@ -80,9 +88,7 @@
         case CFKDateFormatHHmm: self.dateFormatter.dateFormat = @"HH:mm"; break;
             
         default: self.dateFormatter.dateStyle = NSDateFormatterMediumStyle;
-            
     }
-    
 }
 
 @end
